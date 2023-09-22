@@ -1,0 +1,162 @@
+* {
+margin: 0;
+padding: 0;
+font-family: Sans-Serif, Times New Roman, Tahoma, Arial, Courier New;
+}
+body {
+background-color: black;
+}
+.dNone{
+display: none;
+}
+.head {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+background-color: #FFF6AF;
+}
+.head h1 {
+font-size: 3em;
+}
+
+.container {
+width: 75vw;
+height: 75vh;
+padding: 6vh;
+
+}
+.container .card {
+width: 100%;
+border-radius: 30% 0 30% 0;
+height: 20vh;
+background-color: #FFCBFC;
+overflow: hidden;
+
+}
+.container .card div:nth-child(1) {
+background-color: #BD976F;
+text-align: right;
+padding: 1.5vh;
+font-size: 2em;
+}
+.container .card div:nth-child(2) {
+font-size: 2.4em;
+padding: 8%;
+display: flex;
+}
+.container .card div:nth-child(2) ul {
+overflow-x: scroll;
+flex: 2;
+height: 100%;
+
+}
+.container .card div:nth-child(2) div {
+flex: 2;
+height: 100%;
+background-color: #FFB600;
+display: flex;
+}
+.line {
+width: 7px;
+height: 20vh;
+background-color: white;
+}
+.add {
+width: 150px;
+height: 150px;
+background-color: #00FFA1;
+margin: 60px;
+border-radius: 50% 50% 50% 0;
+font-size: 2em;
+margin-bottom: -10vh;
+}
+.add:hover{
+box-shadow: 0 0px 10vh #00EFFF;
+}
+.spin{
+animation: spin 1.7s;
+
+}
+@keyframes spin {
+100%{
+opacity: 0;
+transform: rotate(360deg);
+}
+}
+
+.form {
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: rgba(255,255,255,0.2);
+top: 0.1px;
+left: 0.1px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.form form{
+width: 70%;
+height: 70%;
+background-color: #EDFFDA;
+border-radius: 10%;
+}
+.form form div:nth-child(1){
+margin-top: 20%;
+}
+.form form div{
+margin: 5% 10% 0 10%;
+background-color: #FFD88E;
+
+}
+.form form div label{
+letter-spacing: 7px;
+font-size: 2.4em;
+opacity: 0.7;
+margin: 10px;
+}
+.form form div:nth-child(3) input{
+width: 30%;
+}
+.form form div input{
+width: 90%;
+padding: 10px;
+height: 3vh;
+border: 0;
+font-size: 2em;
+border-radius: 0 30% 0 30%;
+margin: 10px;
+}
+.form form div:nth-child(5){
+margin-top: 8vh;
+}
+
+.form form button{
+width: 40%;
+height: 30%;
+height: 30%;
+margin: 20px;
+background-color: #5AD67A;
+padding: 2vh;
+font-size: 2em;
+border-radius: 20% 50% 20% 50%;
+}
+.form form h1{
+font-size: 7em;
+padding: 0;
+}
+.opsi button{
+flex: 2;
+width: 100%;
+height: 100%;
+padding: 10%;
+}
+.opsi button a{
+text-decoration: none;
+color: black;
+font-size: 2em;
+height: 100%;
+}

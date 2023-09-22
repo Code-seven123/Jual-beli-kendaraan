@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\pageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [pageController::class, 'home']);
+
+Route::post('/home/tambah', [pageController::class, 'tambah']);
+
+Route::get('/home/delete/{id}', [pageController::class, 'hapus']);
+
+Route::get('/home/edit/{id}', [pageController::class, 'edit']);
+
+Route::post('/home/update', [pageController::class, 'update']);

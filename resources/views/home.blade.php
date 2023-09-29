@@ -219,7 +219,8 @@
 <div id="form" class="dNone" >
     <div class="form">
 
-        <form action="/home/tambah">
+        <form action="/home/tambah" method="post">
+          {{ csrf_field() }}
             <h3 align="center"><font size="800">Simpan Data</font></h3>
             <div>
                 <label for="merk">Merk Motor</label>

@@ -32,13 +32,23 @@
             padding: 6vh;
 
         }
+        @media screen and (max-width: 900px) {
+            .form form{
+                height: 100vh;
+            }
+        }
         .container .card {
             width: 100%;
             border-radius: 30% 0 30% 0;
-            height: 20vh;
+            height: 40vh;
             background-color: #FFCBFC;
             overflow: hidden;
             
+        }
+        @media screen and (max-width: 980px) {
+            .container .card{
+                height: 20vh;
+            }
         }
         .container .card div:nth-child(1) {
             background-color: #BD976F;
@@ -52,9 +62,9 @@
             display: flex;
         }
         .container .card div:nth-child(2) ul {
-            overflow-x: scroll;
+            
             flex: 3;
-            height: 7vh;
+            height:
             
             
         }
@@ -111,6 +121,7 @@
             height: 70%;
             background-color: #EDFFDA;
             border-radius: 10%;
+            overflow-x: scroll;
         }
         .form form div:nth-child(1){
             margin-top: 20%;

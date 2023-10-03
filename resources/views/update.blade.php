@@ -46,11 +46,16 @@
     }
     .container{
         width: 100%;
-        height: 84vh;
+        height: 150vh;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: vh;
+    }
+    @media screen and (max-width: 980px) {
+        .container {
+            height: 84vh;
+        }
     }
     .container .form{
         width: 65%;
@@ -68,7 +73,7 @@
     .container .form form label{
         letter-spacing: 3px;
         text-align: left;
-        font-size: 3.5em;
+        font-size: 3em;
         -webkit-text-stroke: 3px black;
         color: white;
         
@@ -84,10 +89,15 @@
     .container .form form input{
         height: 2.5vh;
         width: 70%;
-        font-size: 3em;
+        font-size: 1.8em;
         padding: 3px;
         border: 4px solid black;
         border-radius: 20% 0 20% 0;
+    }
+    @media screen and (max-width: 980px) {
+        .container .form form input{
+            font-size: 3.5em;
+        }
     }
     .container .form form div .color{
         width: 10%;
@@ -102,7 +112,7 @@
         position: absolute;
         right: 230px;
     }
-    form button:hover{
+    /form button:hover{
         animation: dor 2s normal;
     }
     @keyframes dor {
